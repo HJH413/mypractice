@@ -19,14 +19,21 @@ public class chap02_03 {
 		System.out.println("총점 : " + total);
 		System.out.println("평균 : " + avg);
 		
-		switch (avg) {
-		case 80>=avg:
-			
-			break;
-
-		default:
-			break;
+		if(avg>=90) {
+			System.out.println("A학점입니다.");
+		} else if (avg>=80){
+			System.out.println("B학점입니다.");
+		}else if (avg>=70){
+			System.out.println("C학점입니다.");
+		}else if (avg>=60){
+			System.out.println("D학점입니다.");
+		}else if (avg>=50){
+			System.out.println("E학점입니다.");
+		}else{
+			System.out.println("F학점입니다.");
 		}
+		
+		input.close();
 	}
 
 }
